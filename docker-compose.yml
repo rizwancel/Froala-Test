@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  node:
+    build:
+      context: wysiwyg-editor-node-sdk
+      dockerfile: node_Dockerfile
+    ports:
+      - 1502:3000
+    container_name: node-demo
+    restart: always
